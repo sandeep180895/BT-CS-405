@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+double power (double m,int n);
+void display(double m);
+int main()
+{
+	 int m,n,result;
+	 cout<<"enter number and power";
+	 cin>>m>>n ;
+	 result=power(m,n);
+	 display(result);
+	 return 0;
+	 
+}
+double power(double m,int n)
+{  if(n!=0)
+	return m*power(m, n-1); 
+	else
+	return 1;	
+}
+void display(double m)
+{
+	cout<<"value is"<<m;
+}
