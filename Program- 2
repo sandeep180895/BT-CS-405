@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class square
+{
+	int number;
+	public:
+		square(int n)
+		{
+			number=n;
+		}
+		inline void sqr();
+};
+ void inline square:: sqr()
+{
+cout<<number*number;	
+}
+int main()
+{
+	int n;
+	cout<<"enter the number";
+	cin>>n;
+	square obj(n);
+	obj.sqr();
+	return 0;
+}
