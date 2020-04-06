@@ -1,0 +1,34 @@
+//program to find the greater number between 3 numbers
+#include <iostream>
+using namespace std;
+class MAXIMUM
+{
+    protected:
+     int x,y,z;
+public:
+    void number()
+    {
+        cout<<"Enter the three numbers is:-"<<endl;
+        cin>>x>>y>>z;
+    }
+    void display()
+    {
+        if(x>y&&x>z)
+        {
+            cout<<"greater is :-"<<x<<endl;
+        }
+        if(y>z&&y>x)
+        {
+            cout<<"greater is :-"<<y<<endl;
+        }
+        else
+            cout<<" greater is:-"<<z<<endl;
+        }
+};
+int main()
+{
+   MAXIMUM a;
+    a.number();
+    a.display();
+    return 0;
+}
