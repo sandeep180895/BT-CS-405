@@ -1,0 +1,38 @@
+
+/* write a program to show multiple inheritance*/
+#include <iostream>
+using namespace std;
+class x
+{
+	public:
+		int a;
+		void data1()
+		{ cout<<"enter the value of a - 
+		"<<endl;
+		  cin>>a;
+		}
+};
+
+class y
+{ 
+	public:
+		int b;
+		void data2()
+		{ cout<<"enter the value of a - "<<endl;
+		  cin>>b;
+		}
+};
+class z: public x,public y
+{ public:
+	void total()
+	{cout<<"total sum is - "<<(a+b)<<endl;
+	}
+};
+int main()
+ {
+ 	z c1;
+ 	c1.data1();
+ 	c1.data2();
+ 	c1.total();
+	return 0;
+}
