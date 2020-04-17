@@ -25,7 +25,7 @@ public:
 { 
 	cout<<"elements of array is-"<<endl;
     for(i=0;i<5;i++){
-   cout<<"element of array is-"<<m[i];
+   cout<<i<<"element is-"<<m[i]<<endl;
   }
 	}
 	
