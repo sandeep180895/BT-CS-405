@@ -18,7 +18,7 @@ class y
 	public:
 		int b;
 		void data2()
-		{ cout<<"enter the value of a - "<<endl;
+		{ cout<<"enter the value of b- "<<endl;
 		  cin>>b;
 		}
 };
