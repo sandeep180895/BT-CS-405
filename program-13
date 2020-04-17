@@ -17,7 +17,7 @@ class y:public x
 	public:
 		int b;
 		void data2()
-		{ cout<<"enter the value of a - "<<endl;
+		{ cout<<"enter the value of b - "<<endl;
 		  cin>>b;
 		}
 };
@@ -26,12 +26,11 @@ class z: public y
 	int m;
 	int c;
 	void got()
-	
-		{ cout<<"enter the value of a - "<<endl;
-		  cin>>b;
-		}
+	{ cout<<"enter the value of a - "<<endl;
+		  cin>>c;}
+		  
 	void multiply()
-	{ m=a*b*c;
+	{ m= a*b*c;
 	cout<<"multiply of three numbers is - "<<m<<endl;
 		}	
 };
