@@ -1,0 +1,39 @@
+
+/* write a program to show hybrid inheritance*/
+#include <iostream>
+using namespace std;
+class x
+{
+	public:
+		int a;
+};
+
+class y:public x
+{ 
+	public:
+		 y()
+		 { a=10;
+		 }
+		
+};
+class w
+{ public:
+	int b;
+	w()
+	{ b=12;
+		}
+
+};
+class z:public y,public w
+{ public:
+	void sum()
+	{cout<<"sum-"<<a+b;
+	}
+
+};
+int main()
+ {
+ 	z s;
+ 	s.sum();
+	return 0;
+}
