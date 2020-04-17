@@ -1,0 +1,25 @@
+
+/* write a program to show the concept of containership */
+#include <iostream>
+using namespace std;
+class first
+{
+	public:
+		first()
+		{cout<<"SANDEEP\t";
+		}
+};
+
+class last
+{ first f1;
+	public:
+		 last()
+		 { cout<<"SANWARIYA";
+		 }
+		
+};
+int main()
+ {
+ 	last l1;
+	return 0;
+}
