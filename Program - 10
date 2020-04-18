@@ -1,0 +1,73 @@
+#include<iostream>
+
+/*
+Program of constructor overloading and use of copy constructor.
+*/
+using namespace std;
+class Sum  
+{
+	public:
+		int x,y;
+		Sum()
+		{
+			x=-1;
+			y=-1;
+		}
+		Sum(int a)
+		{
+			x=a;
+		}
+		Sum(int a, int b)
+		{
+			x=a;
+			y=b;
+		}
+};
+class Name
+{
+	public:
+	string firstName, middleName, lastName;
+	Name(string first, string middle, string last)
+	{
+		firstName=first;
+		middleName=middle;
+		lastName=last;
+	}
+	Name(const Name &m)
+	{
+		firstName=m.firstName;
+		lastName=m.lastName;
+		middleName=m.middleName;
+	}
+	
+};
+void display(Sum t)
+{
+	printf("x=%2d y=%2d\n",t.x,t.y);
+}
+void display(Name n)
+{
+	cout<<n.firstName<<" "<<n.middleName<<" "<<n.lastName<<endl;
+}
+int main()
+{
+	Sum t1=Sum();
+	Sum t2= Sum(1);
+	Sum t3=Sum(2,3);
+	display(t1);
+	display(t2);
+	display(t3);
+	string first, middle, last;
+	printf("First name:\n");
+	getline(cin,first);
+	printf("Middle name:\n");
+	getline(cin,middle);
+	printf("Last name:\n");
+	getline(cin,last);
+	Name n1=Name(first, middle,last);
+	display(n1);
+	Name n2(n1);
+	display(n2);
+	return 0;
+}
+
